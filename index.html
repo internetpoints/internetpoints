@@ -1,1 +1,430 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - IronSkydive| The Company Website</title>
+<style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto';
+  font-size: 10px;
+  line-height: 3.5em;
+  weight: 300;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Roboto condensed';
+}
+h1{
+  font-size:9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height:4em;
+  color:white;
+  text-shadow: #020819 8px -20px 9px;
+}
+h3{
+  font-size:4.2em;
+  text-align: center;
+}
+h4{
+  font-size:1.5em;
+  letter-spacing:0.4px;
+  margin-bottom:15px;
+}
+h5{
+  font-size:1.2em;
+}
+
+.nav-bar{
+  background-color:	rgb(25, 33, 41);
+  color: white;
+  padding: 14px 0;
+  height:40px;
+}
+
+.nav-bar-ul{
+  width:1200px;
+  margin: 0 auto;
+}
+
+.nav-bar li{
+  list-style-type:none;
+  text-align: center;
+  float:left;
+  width:33%;
+}
+
+.nav-bar-item a{
+  text-decoration:none;
+  color:white;
+  font-size:2em;
+}
+
+.header{
+  background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+  position: 0 0;
+  repeat: no-repeat;
+  size: cover;
+  background-size:cover;
+  height: 650px;
+  padding-top:50px;
+  position: relative;
+}
+.quote{
+  font-size:2.5em;
+  position:absolute;
+  margin-left:10%;
+  margin-bottom:15vh;
+}
+
+.col{
+  float:left;
+}
+.col-3{
+  width:30%;
+}
+.col-middle{
+  margin: 0 5%;
+}
+.clearfix{
+  clear:both;
+}
+
+.dark-background{
+  background-color: rgb(25, 33, 41);
+  color:white;
+}
+#general-information .text{
+  font-size:2em;
+  font-weight:100;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.link-btn{
+  background-color: rgb(67, 163, 230);
+  color:white;
+  font-family: 'roboto condensed';
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  width:150px;
+  margin:40px auto 0 auto;
+  padding:14px 20px 14px 20px;
+  border:2px solid black 0.2;
+}
+
+.service-box{
+  font-size:1.7em;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius:20px;
+  box-sizing:border-box;
+  box-shadow:2px 2px 10px 0 #eee;
+  margin:50px 5% 0 5%;
+  padding:20px;
+  width:40%;
+}
+
+.service-box img{
+  width:125px;
+}
+
+#team .section-text{
+  font-size:1.9em;
+  text-align: center;
+  width:60%;
+  margin: 10px auto;
+}
+
+#team hr{
+  margin:20px auto 30px auto;
+  width: 40%;
+}
+
+#team .member-name{
+  font-size:1.5em;
+  font-weight: 700;
+  display:block;
+  text-align:center;
+}
+
+.footer{
+  text-align:center;
+  font-size:1.9em;
+  padding: 0px 100px 50px;
+  margin-bottom: 25px;
+  
+  
+}
+
+.footer .address{
+  font-style: normal;
+  font-size:0.8em;
+  margin-bottom: 30px;
+}
+
+.footer a{
+    color: rgb(67, 163, 230);
+    text-decoration: none;
+  
+}
+.footer li{
+   list-style-type:none;
+}
+
+.container{
+  width:1200px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+.map-frame{
+  height:375px;
+  float:right;
+  width:60%;
+}
+
+.schedule-table {
+  margin: 0 auto 40px auto;
+  font-size:1.5em;
+  
+}
+
+.schedule-table th, .schedule-table td{
+  border-bottom: 1px solid black;
+  padding: 5px 10px;
+}
+
+.slot-form-container{
+ width:40%;
+  margin:18px auto 0 auto;
+  font-size:1.5em;
+  text-align: center;
+  
+}
+
+label{
+  display:block;
+  margin-bottom:5px;
+  line-height:15px;
+}
+
+.slot-form-container input, .slot-form-container select{
+  height:20px;
+  outline:none;
+  padding:3px;
+  width:100%;
+}
+
+
+.slot-form-container buttom{
+  border: 1px solid black;
+  color:black;
+  background-color:white;
+   margin-top: 15px;
+  padding: 9px;
+ 
+}
+    </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<nav class="nav-bar">
+<ul class="nav-bar-ul">
+<li class="nav-bar-item"><a href='#structure'>Day Structure</a></li>
+<li class="nav-bar-item"><a href='#team'>Team</a></li>
+<li class="nav-bar-item"><a href='schedule'>Schedule</a></li>
+</ul>
+</nav>
+<header class="header">
+<h1><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png" alt="IronSkydive Logo"></img>IronSkydive</h1>
+<h2>Let the trip begin</h2>
+<aside class="quote"><em>"The best experience of our lifes"</em><br />
+<small>Ariel Quiñones & Gonzalo Manrique, Ironhack Founders</aside>
+</header>
+
+<section id="general-information" class="dark-background">
+<div class="container">
+<article class="col col-3">
+<h3>Hello!</h3>
+<p class="text">Welcome to Ironskydive, the best adventure you will ever have.</p>
+<a class="link-btn" href="#">Link Text<a />
+</article>
+<article class="col col-3">
+<h3>About Us</h3>
+<p class="text">We like alot of programming websites,but we also love to practice sport.</p>
+<a class="link-btn" href="#">Watch Video</a>
+</article>
+<article class="col col-3">
+<h3>Wanna Join?</h3>
+<p class="text">Join out fitness program to be in good shape while learning.</p>
+<a href="#" class="link-btn">Register</a>
+</article>
+<div class="clearfix"></div>
+</div>
+</section>
+
+<section id="structure" class="container">
+<h3>How do we structure the day?</h3>
+<article id="training" class="service-box col">
+<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png" alt="Training"></img>
+<h4>1.Training</h4>
+<p>We teach all the necessary things to jump from the plane without any kind of problem.</p>
+</article>
+<article id="getready" class="service-box col">
+<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png" alt="getready"></img>
+<h4>2.Get Ready</h4>
+<p>You are all prepared, you just need the suit and a parachute. All sizes available.</p>
+</article>
+<article id="fly" class="service-box col">
+<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png" alt="fly"></img>
+<h4>3.Fly</h4>
+<p>You are ready, and the plane is waiting for us in the hangar.Let's fly!</p>
+</article>
+<article id="jump" class="service-box col">
+<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png" alt="jump"></img>
+<h4>4.Jump!</h4>
+<p>You have done the most complicated.Just one step left...jump!</p>
+</article>
+<div class="clearfix"></div>
+</section>
+
+<section id="team" class="dark-background">
+<div class="container">
+<h3>Team</h3>
+<p class="section-text">Our team collectively has 75 years of experience. Odds are, when you jump out of the plane with these professionals, you won't go splat.</p>
+<hr class="hr">
+<article class="col col-3"><strong class="member-name">Harold Rothstein</strong>
+<div id="harold">
+<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/team-1.jpg" alt="Image of Harold" height="250px" width="100%"></img>
+</div>
+</article>
+<article class="col col-3 col-middle"><strong class="member-name">Susan Phillips</strong>
+<div id="susan">
+<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/team-2.jpg" alt="Image of Susuan" height="250px" width="100%"></img>
+</div>
+</article>
+<article class="col col-3"><strong class="member-name">Taylor Roberts</strong>
+<div id="taylor">
+<img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/team-3.jpg" alt="Image of Taylor" height="250px" width="100%"></img>
+</div>
+</article>
+<div class="clearfix"></div>
+</div>
+</section>
+
+<section id="schedule" class="container">
+<h3>Schedule</h3>
+<table class="schedule-table" cellspacing="0" cellpadding="0">
+<thread>
+<tr>
+<th>Time</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+</tr>
+</thread>
+<tr>
+<td>9:00-11:00</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>12:00-14:00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>15:00-17:00</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tbody>
+</tbody>
+</table>
+<h3>Schedule a Time Slot</h3>
+<form action="/register" class="slot-form">
+<div class="slot-form-container">
+<label for="email">Email</label>
+<input type="email" placeholder="Enter your email" id="email">
+</div>
+<div class="slot-form-container">
+<label for="participants">Participants</lable>
+<input type="number" id="participants" placeholder="Number of Participants">
+</div>
+<div class="slot-form-container">
+<label for="date">Date</lable>
+<input type="date" id="date">
+</div>
+<div class="slot-form-container">
+<label for="time">Time</lable>
+<select id="time">
+<optiion value="early">9:00-11:00</option>
+<option value="mid">12:00-14:00</option>
+<option value="late">15:00-17:00</option>
+</select>
+</div>
+<div class="slot-form-container">
+<buttom type="submit">Reserve Your Slot!</buttom>
+</div>
+</form>
+</section>
+
+<footer class="dark-background footer">
+<div class="container">
+<section class="col col-3">
+<h5>Contact Information</h5>
+<address class="address">Ironskydive<br />33 Rue la Fayette,<br />75009 Paris,<br />France<br /> +33 (0) 619 193 088</address>
+<h5>Follow Us</h5>
+<ul>
+<li><a href="https://twitter.com/" target="_blank" class="link">Twitter</a></li>
+<li><a href="https://facebook.com/" target="_blank" class="link">Facebook</a></li>
+<li><a href="https://instagram.com" target="_blank" class="link">Instagram</a></li>
+</ul>
+</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099" class="map-frame" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="clearfix"></div>
+</footer>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+</body>
+</html>
